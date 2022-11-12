@@ -13,8 +13,9 @@ set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
 set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
 add_subdirectory(lib/glfw)
 add_subdirectory(lib/fmt)
+add_subdirectory(lib/glm)
 add_executable (kito-project "src/kito-project.cpp" "src/glad.c" "src/shader.h" "src/shader.cpp")
-target_link_libraries(kito-project fmt glfw ${OPENGL_LIBRARIES})
+target_link_libraries(kito-project fmt glfw glm::glm ${OPENGL_LIBRARIES})
 add_custom_command(TARGET kito-project POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_directory
 	${PROJECT_SOURCE_DIR}/res
 	${PROJECT_BINARY_DIR}/res
