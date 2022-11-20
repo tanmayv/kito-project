@@ -1,0 +1,3 @@
+
+namespace sudoku {
+}  // namespace sudoku
