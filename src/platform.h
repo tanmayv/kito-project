@@ -8,5 +8,6 @@ class Platform {
   virtual void OnResize(std::function<void(int, int)> resize_callback) = 0;
   virtual bool CloseRequested() = 0;
   virtual void Update() = 0;
+  virtual void SwitchBuffer() = 0;
 };
 }  // namespace kito

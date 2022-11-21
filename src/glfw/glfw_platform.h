@@ -14,6 +14,7 @@ class GlfwPlatform: public Platform {
   void OnResize(std::function<void(int, int)> resize_callback) override;
   bool CloseRequested() override;
   void Update() override;
+  void SwitchBuffer() override;
  private:
   static void KeyCallback(GLFWwindow* window, int key, int scancode, int action,
                     int mods);

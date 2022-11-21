@@ -66,8 +66,9 @@ void GlfwPlatform::OnResize(std::function<void(int, int)> resize_callback) {
 
 bool GlfwPlatform::CloseRequested() { return glfwWindowShouldClose(window_); }
 
+void GlfwPlatform::SwitchBuffer() { glfwSwapBuffers(window_); }
+
 void GlfwPlatform::Update() {
-  glfwSwapBuffers(window_);
   glfwPollEvents();
   if (resized_ && resize_callback_) {
     resize_callback_(GlfwPlatform::width_, GlfwPlatform::height_);

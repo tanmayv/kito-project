@@ -26,8 +26,13 @@ add_executable (kito-project
 	"src/opengl/shader.cpp"
 	"src/opengl/text_renderer.cc"
 	"src/sudoku/scenes/main_menu.cc"
+	"src/sudoku/main.cc"
 	"src/opengl/texture.cc" 
-	"src/scene/scene_node.h")
+	"src/scene/scene_node.cc" 
+	"src/scene/scene.cc" 
+	"src/math/matrix_stack.cc"
+	"src/scene/root_node.cc"
+	"src/scene/camera_node.cc" "src/render/renderer_interface.h" "src/global.h")
 target_link_libraries(kito-project fmt glfw glm::glm ${OPENGL_LIBRARIES} Freetype::Freetype)
 add_custom_command(TARGET kito-project POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_directory
 	${PROJECT_SOURCE_DIR}/res

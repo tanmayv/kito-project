@@ -89,7 +89,7 @@ void RenderText(Shader& s, unsigned int vao, unsigned int vbo, std::string text,
 
 
 
-int main() {
+int _main() {
   kito::GlfwPlatform platform = kito::GlfwPlatform{WIDTH, HEIGHT, WINDOW_NAME};
   platform.Init();
   kito::GameLoop loop(60, [&platform](double delta_time) {

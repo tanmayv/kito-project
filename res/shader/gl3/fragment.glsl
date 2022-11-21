@@ -5,5 +5,5 @@ uniform float test;
 
 void main()
 {
-    FragColor = vec4(projection[0][0] * 100, 0.0f, 0.0f, 1.0f);
+    FragColor = vec4(0.9f, 0.0f, 0.0f, 1.0f);
 } 
