@@ -13,11 +13,11 @@ class OpenglRenderer : public RendererInterface {
     glViewport(0, 0, global.Width(), global.Height());
   }
 
-  void OpenglRenderer::OnRestore() override {
+  void OnRestore() override {
     glViewport(0, 0, global.Width(), global.Height());
   }
 
-  void OpenglRenderer::ClearBackground() override {
+  void ClearBackground() override {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
   }
