@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.19)
+cmake_minimum_required(VERSION 3.20)
 project (kito-project)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

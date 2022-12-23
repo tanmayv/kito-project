@@ -2,9 +2,7 @@
 
 #include <memory>
 #include <glm/glm.hpp>
-
 namespace kito {
-
 class WindowManager {
  public:
   static std::unique_ptr<WindowManager> Create();
