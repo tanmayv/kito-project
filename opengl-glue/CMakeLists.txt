@@ -1,5 +1,5 @@
 list(APPEND OPENGL_GLUE_SOURCES 
-  "glad.c"
+  "empty.cc"
 )
 
 add_library(opengl-glue SHARED ${OPENGL_GLUE_SOURCES})
